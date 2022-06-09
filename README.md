@@ -2,7 +2,7 @@
 
 ## Table of contents
 
-> - [Title / Repository Name](#title--repository-name)
+> - [The Deep Social-Network-API](#the-deep-social-network-api)
 >   - [Table of contents](#table-of-contents)
 >   - [About / Synopsis](#about--synopsis)
 >   - [Features](#features)
