@@ -1,11 +1,9 @@
-
-   
 const { Thought, User } = require("../models");
 
 const thoughtController = {
   // GET all thoughts
   getAllThoughts(req, res) {
-    Thought.find({})
+    Thought.find({ _id: params.thoughtId })
       .populate({
         path: "thoughts",
       })
@@ -17,7 +15,8 @@ const thoughtController = {
   },
   //   GET single thought by _id
   getThoughtById({ params }, res) {
-    Thought.findOne({ _id: params.thoughtId })
+    Thought.findOne({ _id: params.id })
+      .select("__v")
       .populate({
         path: "thoughts",
       })
